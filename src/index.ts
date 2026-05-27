@@ -5,4 +5,18 @@ let esEstudiante: string = preguntar('¿Son estudiantes de ORT? si/no: ');
 let personasTexto: string = preguntar('Dividir la cuenta entre: ');
 
 let totalPorPersona: number = 0; // COMPLETAR
+
+
+if (esEstudiante === "si"){
+    totalPorPersona = (Number(totalTexto) * 0.9) /Number(personasTexto)
+}
+
+else if(esEstudiante === "no") {
+    totalPorPersona = Number(totalTexto) /Number(personasTexto)
+}
+
+else {
+    totalPorPersona = 0;
+}
+
 console.log(`Total por persona: $${totalPorPersona}`);
